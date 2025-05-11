@@ -1,10 +1,10 @@
 ---
-title: About Alembic
+title: Kelsey blog
 feature_text: |
-  ## Alembic
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
-feature_image: "https://picsum.photos/1300/400?image=989"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+  ## Kelsey Blog
+  这是Kelsey的博客，记录分享生活和学习的点滴
+feature_image: "/assets/images/IMG_0291.jpg"
+excerpt: "欢迎来到 Kelsey 的小天地！这里记录了她的故事、照片和温暖的时光。这是专属于 Kelsey 的美好角落。"
 ---
 
 Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get rolling immediately. Install it, configure it, tweak it, push it.
