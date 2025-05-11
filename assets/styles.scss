@@ -3,10 +3,10 @@ title: false
 styles: true
 ---
 
-@import "alembic";
-
 .transparent-image {
   background-image: url("/assets/images/IMG_0291.jpg");
   opacity: 0.5; /* 设置透明度 */
   background-size: cover; /* 使背景图片覆盖整个区域 */
 }
+
+@import "alembic";
