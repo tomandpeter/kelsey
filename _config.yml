@@ -107,10 +107,10 @@ navigation_footer:
 social_links:
   GitHub: https://github.com/你的GitHub用户名
 
-sharing_links:
-  Twitter: "#0d94e7"
-  facebook: "#3B5998"
-  Email: true
+# sharing_links:
+#   Twitter: "#0d94e7"
+#   facebook: "#3B5998"
+#   Email: true
 
 fonts:
   preconnect_urls:
