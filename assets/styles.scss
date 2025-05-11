@@ -18,14 +18,19 @@ styles: true
   border: 0;
 }
 
-body #comments-section {
+.post-divider {
+  margin: 40px 0;
+  border: 0;
+  border-top: 2px solid #ddd;
+}
+#comments-section {
   margin-top: 40px;
   border-top: 2px solid #ddd;
   padding-top: 20px;
 }
 
-.post-divider {
-  margin: 40px 0;
-  border: 0;
-  border-top: 2px solid #ddd;
+#comments-status {
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0;
 }
