@@ -4,3 +4,7 @@ styles: true
 ---
 
 @import "alembic";
+/* 添加自定义样式，使图片半透明 */
+.transparent-image {
+  opacity: 0.5; /* 控制透明度，值越小越透明 */
+}
