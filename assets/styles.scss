@@ -18,9 +18,9 @@ styles: true
   border: 0;
 }
 
-#comments-section {
-  margin-top: 40px; /* 增加上边距 */
-  border-top: 2px solid #ddd; /* 添加顶部分界线 */
-  padding-top: 20px; /* 增加内边距 */
+body #comments-section {
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
 }
 
