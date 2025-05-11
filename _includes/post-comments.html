@@ -1,39 +1,37 @@
+{% if site.disqus and page.comments != false %}
 <div id="comments-section">
-  <p id="comments-status">正在加载评论区…</p>
+  <div id="comments-status">评论区加载中…</div>
 </div>
 
 <script>
-  // 检查能否访问 Disqus 的 CDN
   function checkDisqus() {
     var testScript = document.createElement('script');
-    testScript.src = 'https://disqus.com/api/3.0/forums/listPosts.jsonp?forum=kelseychen';
+    testScript.src = 'https://disqus.com/api/3.0/forums/listPosts.jsonp?forum={{ site.disqus }}';
     testScript.onload = function() {
       loadDisqus();
     };
     testScript.onerror = function() {
       document.getElementById("comments-status").innerText = "当前评论功能暂未开放，或因网络原因不可用。";
-      // 提供备用方案，显示留言墙等
-      document.getElementById("comments-section").innerHTML += "<p>您可以在我们的 <a href='/留言墙'>留言墙</a> 留言。</p>";
     };
     document.head.appendChild(testScript);
   }
 
-  // 加载 Disqus 评论
   function loadDisqus() {
-    document.getElementById("comments-status").remove();
-    
-    // Disqus 相关的 JS
-    var d = document, s = d.createElement('script');
-    s.src = 'https://kelseychen.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-
     var disqusThread = document.createElement('div');
     disqusThread.id = "disqus_thread";
-    document.getElementById("comments-section").appendChild(disqusThread);
+    var commentsSection = document.getElementById("comments-section");
+    commentsSection.innerHTML = ""; // 清空原来的“加载中”
+
+    commentsSection.appendChild(disqusThread);
+
+    var d = document, s = d.createElement('script');
+    s.src = 'https://{{ site.disqus }}.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
   }
 
   checkDisqus();
 </script>
 
-<noscript>请开启 JavaScript 查看评论。</noscript>
+<noscript>请开启 JavaScript 以查看评论区。</noscript>
+{% endif %}
