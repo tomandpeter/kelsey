@@ -73,10 +73,10 @@ lang: zh-CN
 title: "Kelsey's Blog"
 logo: "/assets/logos/logo.svg"
 description: "Kelsey 的个人博客，记录生活点滴和快乐"
-url: "https://你的GitHub用户名.github.io"  # 改成你自己的GitHub Pages 地址
+url: "https://kelseychen.net"  # 改成你自己的GitHub Pages 地址
 baseurl: ""
-repo: "https://github.com/你的GitHub用户名/仓库名"
-email: "你自己的邮箱"
+repo: "https://github.com/tomandpeter/kelseychen"
+email: "lumber-lung-humble@duck.com"
 
 css_inline: true
 
@@ -102,10 +102,10 @@ navigation_header:
 
 navigation_footer:
 - title: 由 Kelsey 创作
-  url: https://github.com/你的GitHub用户名
+  url: https://kelseychen.net
 
 social_links:
-  GitHub: https://github.com/你的GitHub用户名
+  GitHub: https://kelseychen.net
 
 disqus: "kelseychen"
   
