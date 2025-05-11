@@ -1,9 +1,7 @@
 ---
-layout: post
-title: "我的第一个博客"
-date: 2025-05-11
-categories: [个人]
-tags: [Jekyll, 博客, 生活]
+title: TEST BLOG
+categories:
+- General
 ---
 
 ## 欢迎来到我的博客！
