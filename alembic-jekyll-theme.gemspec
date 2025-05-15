@@ -13,9 +13,10 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files = Dir.chdir(File.dirname(__FILE__)) do
-  Dir.glob("{assets,_layouts,_includes,_sass,LICENSE,README,sw,manifest}/**/*", File::FNM_CASEFOLD)
-end
+  # Use Ruby's Dir.glob for file matching
+  spec.files = Dir.glob(File.join(File.dirname(__FILE__), "**/*")).select do |f|
+    File.file?(f) && f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|sw|manifest)}i)
+  end
 
   spec.add_runtime_dependency "jekyll", "~> 4.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
