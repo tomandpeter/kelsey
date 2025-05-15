@@ -9,6 +9,7 @@ script.onload = function() {
     el: '#Comments',
     site: 'Kelsey 的博客',
     server: 'https://comments.kelseychen.net',
+    apiPrefix: '',  // 取消默认的 /api 前缀
     pageKey: window.location.pathname
   });
 }
