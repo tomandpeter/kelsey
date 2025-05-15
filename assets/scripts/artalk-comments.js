@@ -1,5 +1,3 @@
-// artalk-comments.js
-document.write('<div id="Comments"></div>');
 var script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/artalk@2/dist/Artalk.js';
 document.head.appendChild(script);
@@ -9,7 +7,8 @@ script.onload = function() {
     el: '#Comments',
     site: 'Kelsey 的博客',
     server: 'https://comments.kelseychen.net',
-    apiPrefix: '',  // 取消默认的 /api 前缀
+    apiPrefix: '',  // 取消默认 /api 前缀
     pageKey: window.location.pathname
   });
 }
+
