@@ -13,7 +13,9 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|sw|manifest)}i) }
+  spec.files = Dir.chdir(File.dirname(__FILE__)) do
+  Dir.glob("{assets,_layouts,_includes,_sass,LICENSE,README,sw,manifest}/**/*", File::FNM_CASEFOLD)
+end
 
   spec.add_runtime_dependency "jekyll", "~> 4.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
