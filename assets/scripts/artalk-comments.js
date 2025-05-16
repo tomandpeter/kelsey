@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       apiPrefix: '',               // API路径前缀，这里为空，匹配你Worker接口路径
       pageKey: window.location.pathname, // 用当前页面路径做为评论区唯一标识
       useBackendConf: false,          // 开启自动从后端拉取配置
+      data: [], // 强制加载空数据
       comment: {
         fields: ['nick', 'mail', 'link', 'comment'],   // 评论表单字段顺序
         requiredFields: ['nick', 'comment']            // 必填字段
