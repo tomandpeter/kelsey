@@ -1,0 +1,22 @@
+---
+layout: default
+title: 留言墙
+permalink: /message/
+---
+
+<div class="page">
+  <h1>留言墙</h1>
+  <p>欢迎来留言，随便说点啥~</p>
+
+  <div id="twikoo"></div>
+</div>
+
+<!-- 引入 Twikoo 前端库 -->
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.43/dist/twikoo.all.min.js"></script>
+<script>
+  twikoo.init({
+    envId: 'https://comments.kelseychen.net',
+    el: '#twikoo',
+    path: '/message' // 
+  })
+</script>
