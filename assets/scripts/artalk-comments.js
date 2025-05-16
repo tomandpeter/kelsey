@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
       },
       pageSize: 10,                // 每页显示10条评论
       lang: 'zh-CN'                // 评论区语言设置为简体中文
-      data: [] // 强制加载空数据
     });
   }
 });
