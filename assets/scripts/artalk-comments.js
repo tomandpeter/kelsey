@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       el: '#Comments',             // 评论容器对应的DOM元素ID
       site: 'Kelsey 的博客',          // 站点名称，会显示在评论区头部
       server: 'https://comments.kelseychen.net', // 你部署的Artalk后端地址
-      apiPrefix: '',               // API路径前缀，这里为空，匹配你Worker接口路径
+      apiPrefix: '/api/v2', // 显式设置 apiPrefix
       pageKey: window.location.pathname, // 用当前页面路径做为评论区唯一标识
       useBackendConf: true,          // 开启自动从后端拉取配置
       comment: {
