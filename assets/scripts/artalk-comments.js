@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
       server: 'https://comments.kelseychen.net', // 你部署的Artalk后端地址
       apiPrefix: '',               // API路径前缀，这里为空，匹配你Worker接口路径
       pageKey: window.location.pathname, // 用当前页面路径做为评论区唯一标识
-      useBackendConf: true,          // 开启自动从后端拉取配置
+      useBackendConf: false,          // 开启自动从后端拉取配置
       comment: {
         fields: ['nick', 'mail', 'link', 'comment'],   // 评论表单字段顺序
         requiredFields: ['nick', 'comment']            // 必填字段
