@@ -99,8 +99,7 @@ navigation_header:
   url: /categories/
 - title: 搜索
   url: /search/
-- title: 留言板
-  url: /message/
+
 
 navigation_footer:
 - title: 由 Kelsey 创作
