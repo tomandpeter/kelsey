@@ -3,7 +3,7 @@ title: Kelsey blog
 feature_text: |
   ## Kelsey Blog
   这是Kelsey的博客，记录分享生活和学习的点滴
-feature_image: "/assets/images/IMG_0291.jpg"
+feature_image: "/assets/images/bridge.jpg"
 excerpt: "欢迎来到 Kelsey 的小天地！这里记录了她的故事、照片和温暖的时光。这是专属于 Kelsey 的美好角落。"
 ---
 
