@@ -24,6 +24,26 @@ styles: true
   }
 }
 
+
+/* --------- 图片磨砂效果 --------- */
+.feature {
+  background-size: cover;
+  background-position: center;
+  position: relative; /* 确保子元素绝对定位基准 */
+  color: white; /* 文字颜色可以调整 */
+}
+
+.feature-overlay {
+  position: absolute;
+  inset: 0;  /* top:0; right:0; bottom:0; left:0; */
+  background: rgba(255, 255, 255, 0.2); /* 半透明白色蒙层，调整透明度 */
+  backdrop-filter: blur(8px); /* 磨砂模糊效果 */
+  -webkit-backdrop-filter: blur(8px); /* 兼容Safari */
+  pointer-events: none; /* 不阻挡鼠标事件 */
+}
+
+
+
 /* --------- 颜色变量微调 --------- */
 /* 主色调，悬停时和链接颜色 */
 $accentColour: #009966 !default;   
