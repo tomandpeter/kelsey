@@ -78,7 +78,7 @@ baseurl: ""
 repo: "https://github.com/tomandpeter/kelseychen"
 email: "lumber-lung-humble@duck.com"
 
-css_inline: true
+css_inline: false
 
 favicons:
   16: '/assets/logos/logo@16px.png'
