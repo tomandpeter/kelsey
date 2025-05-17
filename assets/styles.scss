@@ -50,77 +50,18 @@ styles: true
 }
 
 
-/* --------- 颜色变量微调 --------- */
-/* 主色调，悬停时和链接颜色 */
-$accentColour: #009966 !default;   
-/* 鼠标悬停和焦点时的颜色 */
-$hoverColour: #009966 !default;    
-/* 输入框、链接等元素获得焦点时的颜色 */
-$focusColour: #ff6f61 !default;   
-
-/* --------- 字体变量覆盖 --------- */
-$bodytype: (
-  font-family: "Open Sans, sans-serif",
-  regular: 400,
-  bold: 700,
-  italic: italic,
-  cap-height: 0.75
-);
-
-$headingtype: (
-  font-family: "Merriweather, serif",
-  regular: 400,
-  bold: 700,
-  cap-height: 0.75
-);
-
-/* 全站正文基础样式 */
+/* --------- 字体调整 --------- */
 body {
-  color: #384743;           /* 文字颜色 */
-  line-height: 1.6;         /* 舒适行高 */
-  font-family: map-get($bodytype, font-family); /* 正文字体 */
+  font-family: "Noto Serif SC", "PingFang SC", "Microsoft YaHei", serif;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
 }
 
-/* 各级标题样式 */
 h1, h2, h3, h4, h5, h6 {
-  font-family: map-get($headingtype, font-family); /* 标题字体 */
-  line-height: 1.3;
-  color: #242e2b;
-  margin-bottom: 1rem;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
-/* 链接样式 */
-a {
-  color: $accentColour;
-  transition: color 0.2s ease;
-  &:hover, &:focus {
-    color: $hoverColour;
-    outline-color: $focusColour;
-  }
-}
-
-/* 代码块字体和背景 */
-code, pre {
-  font-family: "Fira Code", Menlo, monospace;
-  background-color: #fafafa;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-}
-
-/* 表格标题和说明文字 */
-caption, .caption {
-  color: #a8adac;
-  font-style: italic;
-}
-
-/* 分割线统一边框颜色 */
-hr, .divider, .post-divider {
-  border-color: #a8adac;
-}
-
-/* 主要标题阴影效果 */
-h1, h2 {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-}
 
 @import "alembic";
