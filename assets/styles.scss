@@ -32,5 +32,14 @@ $hoverColour: #009966 !default;
 /* 输入框、链接等元素获得焦点时的颜色 */
 $focusColour: #ff6f61 !default;   
 
+/* --------- 字体变量覆盖 --------- */
+$bodytype: (
+  font-family: "Open Sans", sans-serif,
+  regular: 400,
+  bold: 700,
+  italic: 'italic',
+  cap-height: 0.75
+) !default;
+
 
 @import "alembic";
