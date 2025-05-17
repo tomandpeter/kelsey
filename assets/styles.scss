@@ -65,20 +65,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------引用-------------- */
 blockquote.poem {
+  margin-left: 2em;
 
   p {
-    border-left: 3px solid #d3cbb8; // 柔和米色竖线
+    border-left: 3px solid #d3cbb8;
     padding-left: 2rem;
     font-style: normal;
     font-family: "Kaiti SC", "KaiTi", "STKaiti", "FangSong", serif;
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 0.5px;
-    background-color: #fcfcf4;
     color: #333;
     margin: 1rem 0;
-    border-radius: 6px; // 四角微圆润
-    padding: 1rem 1.5rem 1rem 2rem; // 左边 2rem 右边 1.5rem
+    border-radius: 6px;
   }
 }
 
