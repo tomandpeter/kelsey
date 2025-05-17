@@ -1,8 +1,22 @@
-<div id="twikoo"></div>
+<div id="twikoo" class="content"></div>
+
+<style>
+#twikoo input[type="text"],
+#twikoo input[type="email"],
+#twikoo textarea {
+  margin-bottom: 0;
+}
+
+#twikoo .tk-footer {
+  display: none;
+}
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js"></script>
 <script>
   twikoo.init({
     el: '#twikoo',
-    envId: 'https://comments.kelseychen.net'  // 这里填你刚部署好的域名
+    envId: 'https://comments.kelseychen.net'
   });
 </script>
+
