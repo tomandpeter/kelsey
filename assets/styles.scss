@@ -64,22 +64,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------引用-------------- */
-blockquote {
-  font-family: "Kaiti SC", "KaiTi", "STKaiti", "FangSong", serif;
-  font-size: 18px;
-  font-style: normal;
-  padding: 1em 1.5em;
-  margin: 1.5em 0;
-  border-left: 4px solid #d0d0d0;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.8;
-  letter-spacing: 0.5px;
+blockquote.poem {
+
+  p {
+    border-left: 0.15rem solid $linkColour;
+    padding-left: 2rem;
+    font-style: normal;
+    font-family: "Kaiti SC", "KaiTi", "STKaiti", "FangSong", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    background-color: #fcfcf4;
+    padding: 1rem 1.5rem;
+    color: #333;
+  }
 }
 
-blockquote p {
-  margin: 0;
-}
 
 
 @import "alembic";
