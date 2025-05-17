@@ -47,7 +47,7 @@ collections:
     description: "Kelsey 的生活和记录"
     feature_text: |
       欢迎来到 Kelsey's Blog
-    feature_image: "assets/images/beijing.jpg"
+    feature_image: "/assets/images/beijing.jpg"
 
 defaults:
   -
