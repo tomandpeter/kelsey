@@ -2,7 +2,23 @@
 title: false
 styles: true
 ---
+/* --------- 字体变量覆盖 --------- */
+$bodytype: (
+  font-family: "Open Sans", sans-serif,
+  regular: 400,
+  bold: 700,
+  italic: italic,
+  cap-height: 0.75
+) !default;
 
+$headingtype: (
+  font-family: "Merriweather", serif,
+  regular: 400,
+  bold: 700,
+  cap-height: 0.75
+) !default;
+
+/* --------- 首页渐变线条 --------- */
 .colorful-line {
   height: 4px;
   background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
@@ -30,22 +46,5 @@ $hoverColour: #009966 !default;
 /* 输入框、链接等元素获得焦点时的颜色 */
 $focusColour: #ff6f61 !default;   
 
-/* --------- 字体变量覆盖 --------- */
-/* 正文字体族，建议无衬线字体更现代 */
-$bodytype: (
-  font-family: "Open Sans", sans-serif,
-  regular: 400,
-  bold: 700,
-  italic: italic,
-  cap-height: 0.75
-) !default;
-
-/* 标题字体族，保留衬线字体，带有正式感 */
-$headingtype: (
-  font-family: "Merriweather", serif,
-  regular: 400,
-  bold: 700,
-  cap-height: 0.75
-) !default;
 
 @import "alembic";
