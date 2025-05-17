@@ -9,7 +9,7 @@ excerpt: "欢迎来到 Kelsey 的小天地！这里记录了她的故事、照�
 
 Kelsey 的博客是一个记录生活、学习和成长的地方。欢迎来到我的小天地，分享点滴的喜悦与发现。
 
-<hr class="colorful-line">
+<div class="colorful-line"></div>
 
 ## 关于我
 我来自中国北京。
