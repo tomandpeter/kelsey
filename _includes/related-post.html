@@ -1,13 +1,17 @@
 <h3>相关文章</h3>
 <ul>
   {% assign current_tags = page.tags %}
-  {% assign related_posts = site.posts | where_exp:"post", "post.url != page.url" | where_exp:"post", "post.tags | intersect: current_tags | size > 0" %}
-  {% assign related_posts = related_posts | slice: 0,5 %}
-  {% if related_posts.size > 0 %}
-    {% for post in related_posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  {% else %}
+  {% assign count = 0 %}
+  {% for post in site.posts %}
+    {% if post.url != page.url %}
+      {% assign intersection = post.tags | where_exp: "tag", "current_tags contains tag" %}
+      {% if intersection.size > 0 and count < 5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if count == 0 %}
     <li>暂无相关文章</li>
   {% endif %}
 </ul>
