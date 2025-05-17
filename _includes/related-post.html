@@ -1,10 +1,10 @@
 <h3>相关文章</h3>
 <ul>
-  {% assign current_tags = page.tags %}
+  {% assign current_categories = page.categories %}
   {% assign count = 0 %}
   {% for post in site.posts %}
     {% if post.url != page.url %}
-      {% assign intersection = post.tags | where_exp: "tag", "current_tags contains tag" %}
+      {% assign intersection = post.categories | where_exp: "cat", "current_categories contains cat" %}
       {% if intersection.size > 0 and count < 5 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% assign count = count | plus: 1 %}
