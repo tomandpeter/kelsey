@@ -47,7 +47,7 @@ collections:
     description: "Kelsey 的生活和记录"
     feature_text: |
       欢迎来到 Kelsey's Blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    feature_image: "assets/images/beijing.jpg"
 
 defaults:
   -
