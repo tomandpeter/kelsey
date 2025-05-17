@@ -3,21 +3,9 @@ title: false
 styles: true
 ---
 
-.transparent-image {
-  background-image: url("/assets/images/IMG_0291.jpg");
-  opacity: 0.5; /* 设置透明度 */
-  background-size: cover; /* 使背景图片覆盖整个区域 */
-}
-
 .colorful-line {
   height: 4px;
   background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
   margin: 30px 0;
   border: 0;
-}
-
-.post-divider {
-  margin: 40px 0;
-  border: 0;
-  border-top: 2px solid #ddd;
 }
