@@ -10,4 +10,17 @@ styles: true
   border: 0;
 }
 
+/* Twikoo 自定义样式 */
+#twikoo {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 0;
+  }
+
+  .tk-footer {
+    display: none;
+  }
+}
+
 @import "alembic";
