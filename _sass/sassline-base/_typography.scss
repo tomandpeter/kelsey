@@ -266,7 +266,12 @@ a {
     margin-top: 0rem;
   }
 
+  // Quotes.
+  blockquote {
 
+    p {
+      border-left: 0.15rem solid $linkColour;
+      padding-left: 1rem;
 
       // Add spacing below blockquote paragraphs to align to baseline grid.
       $get-scale: map-get($modular-scale, scale-0);
