@@ -69,5 +69,16 @@ styles: true
   font-family: 'Georgia', serif;
 }
 
+/* --------- 文底备注 --------- */
+.post-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+  font-family: 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
+}
+
 
 @import "alembic";
