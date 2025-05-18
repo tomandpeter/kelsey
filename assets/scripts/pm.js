@@ -25,7 +25,7 @@ async function loadMessages() {
     data.forEach(item => {
       const div = document.createElement("div");
       div.className = "msg-item";
-      div.innerHTML = `<b>${escapeHtml(item.name)} 说：</b>${escapeHtml(item.message)}<br><small>${escapeHtml(item.time)}</small>`;
+      div.innerHTML = `<b>${escapeHtml(item.name)} 说：</b>${escapeHtml(item.message)}<br><small>${formatTime(item.time)}</small>`;
       msgBox.appendChild(div);
     });
   } catch (err) {
@@ -63,4 +63,27 @@ function escapeHtml(text) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// 美化时间显示
+function formatTime(isoString) {
+  const date = new Date(isoString);
+  const now = new Date();
+
+  const diffMs = now - date;
+  const diffSec = Math.floor(diffMs / 1000);
+  const diffMin = Math.floor(diffSec / 60);
+  const diffHour = Math.floor(diffMin / 60);
+
+  const padZero = (num) => (num < 10 ? '0' + num : num);
+
+  if (diffSec < 60) {
+    return '刚刚';
+  } else if (diffMin < 60) {
+    return `${diffMin}分钟前`;
+  } else if (diffHour < 24) {
+    return `${diffHour}小时前`;
+  } else {
+    return `${date.getFullYear()}-${padZero(date.getMonth() + 1)}-${padZero(date.getDate())} ${padZero(date.getHours())}:${padZero(date.getMinutes())}`;
+  }
 }
