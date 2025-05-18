@@ -25,7 +25,7 @@ async function loadMessages() {
     data.forEach(item => {
       const div = document.createElement("div");
       div.className = "msg-item";
-      div.innerHTML = `<b>${escapeHtml(item.name)} 说：</b>${escapeHtml(item.message)}<br><small>${formatTime(item.time)}</small>`;
+      div.innerHTML = `<small>${formatTime(item.time)}</small><br><b>${escapeHtml(item.name)} 说：</b>${escapeHtml(item.message)}`;
       msgBox.appendChild(div);
     });
   } catch (err) {
