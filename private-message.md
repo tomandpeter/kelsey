@@ -1,5 +1,4 @@
 ---
-title: 私密留言板
 layout: page
 ---
 
