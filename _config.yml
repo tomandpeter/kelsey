@@ -80,6 +80,8 @@ email: "lumber-lung-humble@duck.com"
 
 css_inline: false
 
+markdown: kramdown
+
 favicons:
   16: '/assets/logos/logo@16px.png'
   32: '/assets/logos/logo@32px.png'
