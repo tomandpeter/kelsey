@@ -4,7 +4,6 @@ layout: page
 ---
 
 <div id="chatBox" style="max-width:600px; margin:auto; font-family: Arial, sans-serif;">
-  <h3>私密留言板-小伙伴专用</h3>
   
   <input type="password" id="pwdInput" placeholder="🔑 输入你的密码" style="width:100%; padding:8px; margin:8px 0; box-sizing: border-box;" />
   
