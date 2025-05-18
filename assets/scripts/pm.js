@@ -28,6 +28,10 @@ async function loadMessages() {
       div.innerHTML = `<small>${formatTime(item.time)}</small><br><b>${escapeHtml(item.name)} 说：</b>${escapeHtml(item.message)}`;
       msgBox.appendChild(div);
     });
+    
+    // 自动滚动到底部
+    msgBox.scrollTo({ top: msgBox.scrollHeight, behavior: "smooth" });
+    
   } catch (err) {
     alert(err.message);
   }
