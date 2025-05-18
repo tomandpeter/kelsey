@@ -5,7 +5,7 @@ layout: page
 <div class="pm-container">
   <h2>🔐 私密留言板</h2>
 
-  <input type="password" id="pwdInput" placeholder="🔑 输入你的暗号" class="pm-input" />
+  <input type="text" id="pwdInput" placeholder="🔑 输入你的暗号" class="pm-input" autocomplete="off" />
   
   <input type="text" id="nameInput" placeholder="📝 输入你的姓名" class="pm-input" />
   
