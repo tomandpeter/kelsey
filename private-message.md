@@ -2,22 +2,20 @@
 layout: page
 ---
 
-<div style="max-width: 600px; margin: 40px auto; font-family: 'Arial', sans-serif; text-align: center;">
+<div class="pm-container">
+  <h2>🔐 私密留言板</h2>
 
-  <h2 style="margin-bottom: 20px; font-size: 28px;">🔐 私密留言板</h2>
-
-  <input type="password" id="pwdInput" placeholder="🔑 输入你的密码" style="width:100%; padding:10px; margin:8px 0; box-sizing: border-box; border:1px solid #ccc; border-radius:5px;" />
+  <input type="password" id="pwdInput" placeholder="🔑 输入你的暗号" class="pm-input" />
   
-  <input type="text" id="nameInput" placeholder="📝 输入你的姓名" style="width:100%; padding:10px; margin:8px 0; box-sizing: border-box; border:1px solid #ccc; border-radius:5px;" />
+  <input type="text" id="nameInput" placeholder="📝 输入你的姓名" class="pm-input" />
   
-  <button onclick="loadMessages()" style="width:100%; padding:12px; margin-bottom:10px; cursor:pointer; background:#3498db; color:white; border:none; border-radius:5px;">📥 加载留言</button>
+  <button onclick="loadMessages()" class="pm-button load">📥 加载留言</button>
 
-  <div id="messages" style="border:1px solid #ddd; min-height:200px; max-height:300px; padding:10px; background:#fafafa; overflow-y:auto; text-align:left; border-radius:5px; margin-bottom:10px;"></div>
+  <div id="messages" class="pm-messages"></div>
 
-  <textarea id="msgInput" placeholder="✏️ 写点啥..." style="width:100%; height:100px; padding:10px; box-sizing: border-box; border:1px solid #ccc; border-radius:5px; margin-bottom:10px;"></textarea>
+  <textarea id="msgInput" placeholder="✏️ 写点啥..." class="pm-textarea"></textarea>
   
-  <button onclick="sendMessage()" style="width:100%; padding:12px; cursor:pointer; background:#2ecc71; color:white; border:none; border-radius:5px;">📤 发送</button>
-
+  <button onclick="sendMessage()" class="pm-button send">📤 发送</button>
 </div>
 
 <link rel="stylesheet" href="/assets/styles/pm.css">
