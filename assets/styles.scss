@@ -52,10 +52,21 @@ styles: true
 
 /* --------- blockquote调整 --------- */
 
-/* 英文引用专用 */
-blockquote.en-quote {
+/* 
+  英文 blockquote 用法示例：
+  在包含英文引用的父元素上加 class="en" ，
+  这样英文引用就会应用斜体和英文衬线字体样式
+
+  示例 HTML:
+  <div class="en">
+    <blockquote>
+      This is an English quote.
+    </blockquote>
+  </div>
+*/
+.en blockquote {
   font-style: italic;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", serif;
+  font-family: 'Georgia', serif;
 }
 
 
