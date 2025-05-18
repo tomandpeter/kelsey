@@ -101,6 +101,8 @@ navigation_header:
   url: /categories/
 - title: 搜索
   url: /search/
+- title: 私信
+  url: /private-message/
 - title: 留言板
   url: /message/
 
