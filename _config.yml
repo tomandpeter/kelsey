@@ -75,8 +75,7 @@ logo: "/assets/logos/logo.svg"
 description: "Kelsey 的个人博客，记录生活点滴和快乐"
 url: "https://kelseychen.net"  # 改成你自己的GitHub Pages 地址
 baseurl: ""
-repo: "https://github.com/tomandpeter/kelseychen"
-email: "lumber-lung-humble@duck.com"
+email: "blog@kelseychen.net"
 
 css_inline: false
 
@@ -116,10 +115,10 @@ social_links:
 
 disqus: "kelseychen"
   
-# sharing_links:
+sharing_links:
 #   Twitter: "#0d94e7"
 #   facebook: "#3B5998"
-#   Email: true
+  Email: true
 
 fonts:
   preconnect_urls:
