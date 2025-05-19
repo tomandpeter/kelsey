@@ -179,5 +179,10 @@ styles: true
   }
 }
 
+/* --------- 全局字体 --------- */
+body {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD",
+               'Noto Serif SC', 'Noto Sans SC', "Microsoft YaHei", "Songti SC", serif;
+}
 
 @import "alembic";
