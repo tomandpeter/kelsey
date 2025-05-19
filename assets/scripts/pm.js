@@ -2,7 +2,7 @@ const apiBase = "https://msg.kelseychen.net";
 
 async function loadMessages() {
   const pwd = document.getElementById("pwdInput").value.trim();
-  if (!pwd) return alert("请输入密码！");
+  if (!pwd) return alert("请输入暗号！");
 
   try {
     const res = await fetch(`${apiBase}/messages?pwd=${encodeURIComponent(pwd)}`, {
@@ -42,7 +42,7 @@ async function sendMessage() {
   const name = document.getElementById("nameInput").value.trim();
   const msg = document.getElementById("msgInput").value.trim();
 
-  if (!pwd || !name || !msg) return alert("密码、姓名和留言都不能为空！");
+  if (!pwd || !name || !msg) return alert("暗号、姓名和留言都不能为空！");
 
   try {
     const res = await fetch(`${apiBase}/messages?pwd=${encodeURIComponent(pwd)}`, {
