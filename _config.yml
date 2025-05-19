@@ -115,10 +115,10 @@ social_links:
 
 disqus: "kelseychen"
   
-sharing_links:
+#   sharing_links:
 #   Twitter: "#0d94e7"
 #   facebook: "#3B5998"
-  Email: true
+#   Email: true
 
 fonts:
   preconnect_urls:
