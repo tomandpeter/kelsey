@@ -122,6 +122,7 @@ disqus: "kelseychen"
 
 fonts:
   preconnect_urls:
-    - https://fonts.gstatic.com
+    - https://fonts.loli.net
   font_urls:
-    - https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Noto+Sans+SC&display=swap
+    - https://fonts.loli.net/css2?family=Noto+Serif+SC&family=Noto+Sans+SC&display=swap
+
