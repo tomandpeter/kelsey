@@ -1,4 +1,4 @@
-const fish = document.querySelector('.fish');
+const fish = document.getElementById('fish-container');
 const textBox = document.getElementById('floating-text');
 
 const quotes = [
