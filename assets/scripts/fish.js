@@ -32,3 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("🐟 没找到鱼容器 #fish-container");
   }
 });
+// PC 点击事件
+fish.addEventListener('click', showQuote);
+
+// 手机触摸事件
+fish.addEventListener('touchstart', showQuote);
