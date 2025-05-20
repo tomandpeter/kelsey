@@ -213,21 +213,41 @@ body {
 }
 
 #floating-text {
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  margin-bottom: 5px;
-  padding: 4px 8px;
-  background: #fff5c0;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  white-space: nowrap;
+  position: fixed;
   opacity: 0;
-  transition: all 0.5s;
-  font-size: 14px;
+  transition: opacity 0.3s;
+  font-size: 16px;
   color: #333;
-  z-index: 10000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 12px;
+  border-radius: 16px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 9999;
+  transform: scale(0.5);
+}
+
+.bubble-pop {
+  animation: pop-up 3s ease forwards;
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-80px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(1.2);
+  }
 }
 
 
