@@ -185,4 +185,18 @@ body {
                'Noto Serif SC', 'Noto Sans SC', "Microsoft YaHei", "Songti SC", serif;
 }
 
+/* --------- 金鱼小挂件 --------- */
+#fish-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background: url('/assets/images/fish.svg') no-repeat center center;
+  background-size: contain;
+  z-index: 9999;
+}
+
+
 @import "alembic";
