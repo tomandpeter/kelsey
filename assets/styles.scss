@@ -186,15 +186,15 @@ body {
 }
 
 /* --------- 金鱼小挂件 --------- */
-@keyframes swim {
+@keyframes swim-move {
   0% {
-    transform: translateX(0) rotate(0deg);
+    transform: translateX(0);
   }
   50% {
-    transform: translateX(-10px) rotate(-5deg);
+    transform: translateX(-20px);
   }
   100% {
-    transform: translateX(0) rotate(0deg);
+    transform: translateX(0);
   }
 }
 #fish-container {
@@ -204,19 +204,31 @@ body {
   width: 80px;
   height: 80px;
   cursor: pointer;
-  background: url('/assets/images/fish.svg') no-repeat center center;
-  background-size: contain;
   z-index: 9999;
 }
+
+#fish-container img {
+  width: 80px;
+  animation: swim-move 4s infinite ease-in-out;
+}
+
 #floating-text {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  background: #fff5c0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  white-space: nowrap;
   opacity: 0;
   transition: all 0.5s;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
-  z-index: 9999;
+  z-index: 10000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+
 
 @import "alembic";
