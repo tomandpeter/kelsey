@@ -1,3 +1,4 @@
+console.log('fish.js 已加载');
 document.addEventListener('DOMContentLoaded', () => {
   const fish = document.getElementById('fish-container');
   if (!fish) {
