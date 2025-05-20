@@ -12,28 +12,26 @@ const quotes = [
   "春眠不觉晓，处处闻啼鸟。"
 ];
 
-function showQuote(e) {
+function showQuote() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   textBox.textContent = randomQuote;
 
   // 获取鱼的位置
   const fishRect = fish.getBoundingClientRect();
-  const textBoxWidth = 180;
+  const textBoxWidth = 200;
 
-  // 定位在鱼的上方偏左（微调）
-  const top = fishRect.top - 50;
-  const left = fishRect.left + fishRect.width / 2 - textBoxWidth / 2;
+  // 定位在鱼嘴巴的位置：假设鱼嘴是鱼图片的 65% 宽度、35% 高度处
+  const top = fishRect.top + fishRect.height * 0.35;
+  const left = fishRect.left + fishRect.width * 0.65 - textBoxWidth / 2;
 
   textBox.style.top = `${top}px`;
   textBox.style.left = `${left}px`;
-  textBox.style.opacity = 1;
+  textBox.style.width = `${textBoxWidth}px`;
 
-  if (textBox.timer) {
-    clearTimeout(textBox.timer);
-  }
-  textBox.timer = setTimeout(() => {
-    textBox.style.opacity = 0;
-  }, 3000);
+  // 清除旧动画 class
+  textBox.classList.remove('bubble-pop');
+  void textBox.offsetWidth;  // 强制 reflow 重置动画
+  textBox.classList.add('bubble-pop');
 }
 
 // 绑定点击和手机触摸事件
