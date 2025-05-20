@@ -1,35 +1,41 @@
-const fish = document.querySelector('.fish');
+const fish = document.querySelector('#fish-container img');
 const textBox = document.getElementById('floating-text');
 
 const quotes = [
-  "白日依山尽，黄河入海流。",
-  "To be or not to be.",
-  "明月几时有，把酒问青天。",
-  "Carpe diem — seize the day.",
-  "路漫漫其修远兮，吾将上下而求索。",
-  "Stay hungry, stay foolish.",
-  "春眠不觉晓，处处闻啼鸟。"
+  "春江花月夜",
+  "明月几时有",
+  "举头望明月",
+  "低头思故乡",
+  "月落乌啼霜满天",
+  "江枫渔火对愁眠",
+  "无边落木萧萧下",
+  "不尽长江滚滚来"
 ];
 
-function showQuote() {
+fish.addEventListener('click', () => {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   textBox.textContent = randomQuote;
 
   const fishRect = fish.getBoundingClientRect();
-  const textBoxWidth = 200;
+  const textBoxWidth = 200;  // 你可以根据需要调整宽度
 
-  // 鱼嘴在鱼左边缘，冒泡泡位置设为左边缘向左偏20px
-  const top = fishRect.top + fishRect.height * 0.4;
-  const left = fishRect.left - textBoxWidth - 20;  // 向左偏20px，显示在鱼嘴左边
+  // 诗句位置：鱼的左上方偏上一点（鱼嘴左侧上方）
+  const top = fishRect.top - 30;  // 向上偏移30px
+  const left = fishRect.left - textBoxWidth - 10; // 向左偏移，避免遮挡鱼嘴
 
   textBox.style.top = `${top}px`;
   textBox.style.left = `${left}px`;
   textBox.style.width = `${textBoxWidth}px`;
 
-  textBox.classList.remove('bubble-pop');
-  void textBox.offsetWidth;  // 触发重绘，重置动画
-  textBox.classList.add('bubble-pop');
-}
+  textBox.classList.remove('bubble-pop', 'show');
+  void textBox.offsetWidth;  // 触发重绘，确保动画可重播
+  textBox.classList.add('show', 'bubble-pop');
+
+  textBox.addEventListener('animationend', () => {
+    textBox.classList.remove('bubble-pop', 'show');
+  }, { once: true });
+});
+
 
 fish.addEventListener('click', showQuote);
 fish.addEventListener('touchstart', showQuote);
